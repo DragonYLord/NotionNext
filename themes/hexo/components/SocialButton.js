@@ -16,7 +16,7 @@ const SocialButton = () => {
         <i className='transform hover:scale-125 duration-150 fab fa-itch-io dark:hover:text-indigo-400 hover:text-indigo-600'/>
       </a>}
       {BLOG.CONTACT_DOUBAN && <a target='_blank' rel='noreferrer' title={'douban'} href={BLOG.CONTACT_DOUBAN} >
-        <i className='transform hover:scale-125 duration-150 fab fa-user-plus dark:hover:text-indigo-400 hover:text-indigo-600'/>
+        <i className='transform hover:scale-125 duration-150 fa-solid fa-user-plus dark:hover:text-indigo-400 hover:text-indigo-600'/>
       </a>}
       {BLOG.CONTACT_STEAM && <a target='_blank' rel='noreferrer' title={'steam'} href={BLOG.CONTACT_STEAM} >
         <i className='transform hover:scale-125 duration-150 fab fa-steam dark:hover:text-indigo-400 hover:text-indigo-600'/>

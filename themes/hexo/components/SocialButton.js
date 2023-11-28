@@ -21,7 +21,7 @@ const SocialButton = () => {
       {BLOG.CONTACT_STEAM && <a target='_blank' rel='noreferrer' title={'steam'} href={BLOG.CONTACT_STEAM} >
         <i className='transform hover:scale-125 duration-150 fab fa-steam dark:hover:text-indigo-400 hover:text-indigo-600'/>
       </a>}
-      {BLOG.CONTACT_ZHIHU && <a target='_blank' rel='noreferrer' title={'zhihu'} href={BLOG.CONTACT_STEAM} >
+      {BLOG.CONTACT_ZHIHU && <a target='_blank' rel='noreferrer' title={'zhihu'} href={BLOG.CONTACT_ZHIHU} >
         <i className='transform hover:scale-125 duration-150 fab fa-zhihu dark:hover:text-indigo-400 hover:text-indigo-600'/>
       </a>}
       {BLOG.CONTACT_TWITTER && <a target='_blank' rel='noreferrer' title={'twitter'} href={BLOG.CONTACT_TWITTER} >

@@ -27,6 +27,7 @@ const BLOG = {
   CONTACT_ITCH: process.env.NEXT_PUBLIC_CONTACT_ITCH || 'https://longxiaojie.itch.io/', // itch主页
   CONTACT_DOUBAN: process.env.NEXT_PUBLIC_CONTACT_DOUBAN || 'https://www.douban.com/people/137359056/', // 豆瓣主页
   CONTACT_STEAM: process.env.NEXT_PUBLIC_CONTACT_STEAM || 'https://steamcommunity.com/profiles/76561198378988197/', // steam主页
+  CONTACT_ZHIHU: process.env.NEXT_PUBLIC_CONTACT_ZHIHU || 'https://www.zhihu.com/people/long-xiao-jie-16', // 你的知乎个人主页
   CONTACT_WEIBO: process.env.NEXT_PUBLIC_CONTACT_WEIBO || '', // 你的微博个人主页
   CONTACT_TWITTER: process.env.NEXT_PUBLIC_CONTACT_TWITTER || '', // 你的twitter个人主页
   CONTACT_GITHUB: process.env.NEXT_PUBLIC_CONTACT_GITHUB || '', // 你的github个人主页 例如 https://github.com/tangly1024

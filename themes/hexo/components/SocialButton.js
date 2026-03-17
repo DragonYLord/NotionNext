@@ -12,7 +12,11 @@ const SocialButton = () => {
   const CONTACT_GITHUB = siteConfig('CONTACT_GITHUB')
   const CONTACT_TWITTER = siteConfig('CONTACT_TWITTER')
   const CONTACT_TELEGRAM = siteConfig('CONTACT_TELEGRAM')
-
+  
+  const CONTACT_ITCH = siteConfig('CONTACT_ITCH')
+  const CONTACT_DOUBAN = siteConfig('CONTACT_DOUBAN')
+  const CONTACT_STEAM = siteConfig('CONTACT_STEAM')
+  const CONTACT_ZHIHU = siteConfig('CONTACT_ZHIHU')
   const CONTACT_LINKEDIN = siteConfig('CONTACT_LINKEDIN')
   const CONTACT_WEIBO = siteConfig('CONTACT_WEIBO')
   const CONTACT_INSTAGRAM = siteConfig('CONTACT_INSTAGRAM')
@@ -66,6 +70,16 @@ const SocialButton = () => {
             <i className='transform hover:scale-125 duration-150 fab fa-telegram dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
+        {CONTACT_ITCH && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href={CONTACT_ITCH}
+            title={'itch'}>
+            <i className='transform hover:scale-125 duration-150 fab fa-itch-io dark:hover:text-indigo-400 hover:text-indigo-600' />
+          </a>
+        )}
+
         {CONTACT_LINKEDIN && (
           <a
             target='_blank'

@@ -79,7 +79,24 @@ const SocialButton = () => {
             <i className='transform hover:scale-125 duration-150 fab fa-itch-io dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
-
+        {CONTACT_STEAM && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href={CONTACT_STEAM}
+            title={'steam'}>
+            <i className='transform hover:scale-125 duration-150 fab fa-steam dark:hover:text-indigo-400 hover:text-indigo-600' />
+          </a>
+        )}
+        {CONTACT_ZHIHU && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href={CONTACT_ZHIHU}
+            title={'zhihu'}>
+            <i className='transform hover:scale-125 duration-150 fab fa-zhihu dark:hover:text-indigo-400 hover:text-indigo-600' />
+          </a>
+        )}
         {CONTACT_LINKEDIN && (
           <a
             target='_blank'
@@ -154,6 +171,20 @@ const SocialButton = () => {
               className='transform hover:scale-125 duration-150 w-6'
               src='/svg/xiaohongshu.svg'
               alt='小红书'
+            />
+          </a>
+        )}
+        {CONTACT_DOUBAN && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            title={'豆瓣'}
+            href={CONTACT_DOUBAN}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className='transform hover:scale-125 duration-150 w-6'
+              src='/svg/douban.svg'
+              alt='豆瓣'
             />
           </a>
         )}

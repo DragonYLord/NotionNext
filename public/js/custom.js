@@ -2,22 +2,20 @@
 
 /*
  * Append this script to public/js/custom.js in the deployed NotionNext repository.
- * Scope: the uploaded MP4 block on /EP7 only.
- * Uses the existing Notion video URL; does not re-encode or replace the upload.
+ * Scope: native Notion video blocks in every blog article.
+ * Uses the original uploads; does not re-encode or replace the videos.
  */
 ;(() => {
-  const installedKey = '__ep7VideoAutoplayInstalledV1'
+  const installedKey = '__notionVideoAutoplayInstalledV1'
   if (window[installedKey]) return
   window[installedKey] = true
 
-  const selector =
-    '#notion-article .notion-block-3e9ab4a7455080cd9838cb0d7a31ca73 video'
+  const selector = '#notion-article .notion-asset-wrapper-video video'
   const initialized = new WeakSet()
   let scheduled = false
 
   function enableVideoLoop() {
     scheduled = false
-    if (window.location.pathname.replace(/\/+$/, '') !== '/EP7') return
 
     document.querySelectorAll(selector).forEach(video => {
       if (!(video instanceof HTMLVideoElement) || initialized.has(video)) return

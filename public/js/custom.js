@@ -28,7 +28,8 @@
       video.loop = true
       video.autoplay = true
       video.playsInline = true
-      video.controls = false
+      // Native controls provide sound, volume, seeking and fullscreen.
+      video.controls = true
 
       // If the browser refuses autoplay, keep a usable manual play control.
       const playback = video.play()
